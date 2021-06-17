@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-// import { Link } from 'react-router-dom'
+
 
 const Home = () => {
   const [formData, setFormData] = useState({
@@ -80,10 +80,7 @@ const Home = () => {
               </p>
               {!displayExtra ?
                 <>
-                  <p
-                    className="title has-text-text-centered"
-                    onClick={toggleDisplay}>
-                    Less Information</p>  
+                  <p className="title has-text-text-centered" onClick={toggleDisplay}>Less Information</p>
                   <p className="title has-text-text-centered">Feels like: {weather.current.feelslike_c} &#8451;</p>
                   <p className="title has-text-text-centered">Humidity: {weather.current.humidity} &#37;</p>
                   <p className="title has-text-text-centered">Wind Speed: {weather.current.wind_kph}</p>
@@ -91,10 +88,7 @@ const Home = () => {
                 </>
                 :
                 <>
-                  <p
-                    className="title has-text-text-centered"
-                    onClick={toggleDisplay}>
-                    More Information</p>
+                  <p className="title has-text-text-centered" onClick={toggleDisplay}>More Information</p>
                 </>
               }
               <p
@@ -102,7 +96,7 @@ const Home = () => {
                 onClick={resetForm}>Explore somewhere new</p>
             </div>
           </div>
-        </section>
+        </section >
       }
     </>
   )
