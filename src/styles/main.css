@@ -1,5 +1,7 @@
 .hero-body {
   background-image: url("./assets/hero.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .title {
