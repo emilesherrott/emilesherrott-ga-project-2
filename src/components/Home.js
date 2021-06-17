@@ -58,9 +58,10 @@ const Home = () => {
                 <form onSubmit={handleSubmit}>
                   <input
                     className="input"
-                    placeholder=""
+                    placeholder="type a location"
                     name="location"
                     onChange={handleChange}
+                    autoComplete="off"
                   />
                 </form>
               </h1>
@@ -71,13 +72,15 @@ const Home = () => {
         < section className="hero is-fullheight-with-navbar" >
           <div className="hero-body">
             <div className="container">
-              <p className="title is-1 has-text-text-centered">The weather in
-                <span> {weather.location.name}</span> is
-                <span> {weather.current.condition.text.toLowerCase()}</span>
-              </p>
-              <p className="title has-text-text-centered">
-                <span>{weather.current.temp_c}</span> &#8451;
-              </p>
+              <div>
+                <p className="title is-1 has-text-text-centered">The weather in 
+                  <span> {weather.location.name} </span> is 
+                  <span> {weather.current.condition.text.toLowerCase()} </span>
+                </p>
+                <p className="title has-text-text-centered">
+                  <span>{weather.current.temp_c}</span> &#8451;
+                </p>
+              </div>
               {!displayExtra ?
                 <>
                   <p className="title has-text-text-centered" onClick={toggleDisplay}>Less Information</p>

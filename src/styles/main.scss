@@ -11,3 +11,44 @@
 .weather-title {
   color: #FF0000;
 }
+
+
+
+
+form {
+  display: inline-block;
+  font-size: 2.5rem;
+}
+
+.input {
+  margin-left: 20px;
+  background: rgba(0,0,0,0.0);
+  border-color: rgba(0,0,0,0.0);
+  color: #FFF;
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0px;
+  height: 2.5rem;
+  line-height: 0px;
+  vertical-align: baseline;
+  outline: none;
+  &:hover {
+    background: rgba(0,0,0,0.0);
+    border-color: rgba(0,0,0,0.0);
+  }
+  &:focus {
+    background: rgba(0,0,0,0.0);
+    border-color: rgba(0,0,0,0.0);
+    outline: none;
+    outline-color: rgba(0,0,0,0.0);
+    outline-width: none;
+  }
+}
+
+
+.input::placeholder { 
+  color: #FFF;
+  opacity: 1; 
+  font-weight: 600;
+}
