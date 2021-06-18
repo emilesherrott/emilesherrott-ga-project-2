@@ -1,0 +1,29 @@
+@mixin main-text {
+  font-family: $primary-font;
+  font-weight: 700;
+  color: #FFF;
+  font-size: xx-large;
+}
+
+@mixin main-options-text {
+  font-family: $primary-font;
+  font-weight: 700;
+  color: #FFF;
+  font-size: large;
+  margin: 0rem 0rem 1rem 0rem;
+  &:hover {
+    transform: translate(20px);
+    transition: 500ms;
+  }
+}
+
+@mixin show-info-text {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  font-family: $primary-font;
+  font-weight: 700;
+  color: #FFF;
+  font-size: larger;
+
+}

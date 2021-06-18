@@ -1,0 +1,13 @@
+.main-text {
+  @include main-text;
+}
+.home-input {
+  @include main-text;
+}
+
+.main-options-text {
+  @include main-options-text;
+}
+.show-info-text {
+  @include show-info-text;
+}

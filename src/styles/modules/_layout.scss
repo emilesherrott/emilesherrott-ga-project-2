@@ -1,0 +1,30 @@
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.display-flex-row {
+  display: flex;
+}
+
+
+#display-show-hide {
+  margin-top: 2rem;
+}
+#display-show {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  display: flex;
+  .display-show-child {
+    margin-left: 40px;
+  }
+}

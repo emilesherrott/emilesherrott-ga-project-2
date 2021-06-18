@@ -1,0 +1,9 @@
+.home-input {
+  background: rgba( #000000, 0.1);
+  border: none;
+  &:hover, &:focus {
+    background: rgba( #000000, 0.0);
+    outline: none;
+    caret-color: #FFF;
+  }
+}
