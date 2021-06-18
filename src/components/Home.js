@@ -13,13 +13,11 @@ const Home = () => {
   const handleChange = (event) => {
     const newFormData = { ...formData, [event.target.name]: event.target.value }
     setFormData(newFormData)
-    console.log(formData.location)
   }
 
   const handleSubmit = (event) => {
     event.preventDefault()
     setFormSubmit(formData.location)
-    console.log(formSubmit)
   }
 
 
@@ -30,6 +28,7 @@ const Home = () => {
   const toggleDisplay = () => {
     setDisplayExtra(!displayExtra)
   }
+  const displayShowHide = displayExtra ? 'Show More' : 'Hide Info'
 
   useEffect(() => {
     const getData = async () => {
@@ -46,57 +45,60 @@ const Home = () => {
 
 
 
-  console.log(weather)
   return (
     <>
       {!weather ?
         <section className="hero is-fullheight-with-navbar">
           <div className="hero-body">
             <div className="container">
-              <h1 className="title is-1 has-text-text-centered">
+              <p className="title is-1 has-text-text-centered">
                 <span className="title"> What&apos;s the weather like in...</span>
                 <form onSubmit={handleSubmit}>
                   <input
                     className="input"
-                    placeholder="type a location"
+                    placeholder=""
                     name="location"
                     onChange={handleChange}
                     autoComplete="off"
                   />
                 </form>
-              </h1>
+              </p>
             </div>
           </div>
         </section>
         :
         < section className="hero is-fullheight-with-navbar" >
           <div className="hero-body">
-            <div className="container">
-              <div>
-                <p className="title is-1 has-text-text-centered">The weather in 
-                  <span> {weather.location.name} </span> is 
+            <div className="container display-container">
+              <div classNmae="main">
+                <p className="title is-1 has-text-text-centered">The weather in
+                  <span> {weather.location.name} </span> is
                   <span> {weather.current.condition.text.toLowerCase()} </span>
                 </p>
-                <p className="title has-text-text-centered">
-                  <span>{weather.current.temp_c}</span> &#8451;
-                </p>
+                <p className="title has-text-text-centered toggle" onClick={toggleDisplay}>{displayShowHide}</p>
+                <p className="title has-text-text-centered reset" onClick={resetForm}>Explore somewhere new</p>
               </div>
               {!displayExtra ?
                 <>
-                  <p className="title has-text-text-centered" onClick={toggleDisplay}>Less Information</p>
-                  <p className="title has-text-text-centered">Feels like: {weather.current.feelslike_c} &#8451;</p>
-                  <p className="title has-text-text-centered">Humidity: {weather.current.humidity} &#37;</p>
-                  <p className="title has-text-text-centered">Wind Speed: {weather.current.wind_kph}</p>
-                  <p className="title has-text-text-centered">Wind Direction: {weather.current.wind_dir}</p>
+                  <div className="extra-information-container">
+                    <div className="extra-information">
+                      <p className="title has-text-text-centered extra-info"><span>Temperature:</span><span>{weather.current.temp_c} &#8451;</span></p>
+                      <p className="title has-text-text-centered extra-info"><span>Feels like:</span> <span>{weather.current.feelslike_c} &#8451;</span></p>
+                      <p className="title has-text-text-centered extra-info"><span>Max Temperature:</span><span>{weather.forecast.forecastday[0].day.maxtemp_c} &#8451;</span></p>
+                      <p className="title has-text-text-centered extra-info"><span>Min Temperature:</span><span>{weather.forecast.forecastday[0].day.mintemp_c} &#8451;</span></p>
+                    </div>
+                    <div className="extra-information">
+                      <p className="title has-text-text-centered extra-info"><span>Wind Speed:</span> <span>{weather.current.wind_kph} kph</span></p>
+                      <p className="title has-text-text-centered extra-info"><span>Wind Direction:</span> <span>{weather.current.wind_dir}</span></p>
+                      <p className="title has-text-text-centered extra-info"><span>Precipitation:</span> <span>{weather.current.precip_mm} mm</span></p>
+                      <p className="title has-text-text-centered extra-info"><span>Humidity:</span> <span>{weather.current.humidity} &#37;</span></p>
+                    </div>
+                  </div>
                 </>
                 :
                 <>
-                  <p className="title has-text-text-centered" onClick={toggleDisplay}>More Information</p>
                 </>
               }
-              <p
-                className="title"
-                onClick={resetForm}>Explore somewhere new</p>
             </div>
           </div>
         </section >

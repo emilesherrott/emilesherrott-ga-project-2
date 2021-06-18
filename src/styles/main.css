@@ -1,15 +1,34 @@
-.hero-body {
+body {
   background-image: url("./assets/hero.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.display-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 180px;
+  margin-left: 300px;
+}
+
+.main {
+  margin-left: 200px;
+  margin-right: 200px;
+  width: 900px;
+  height: 180px;
+}
+
+#root > section > div > div > div > p.title.is-1.has-text-text-centered {
+  width: 900px;
 }
 
 .title {
   color: #FFF;
 }
 
-.weather-title {
-  color: #FF0000;
+.title.is-1 {
+  font-size: 2rem;
 }
 
 form {
@@ -17,55 +36,54 @@ form {
   font-size: 2.5rem;
 }
 
-.input {
-  margin-left: 20px;
-  background: rgba(0, 0, 0, 0);
-  border-color: rgba(0, 0, 0, 0);
+input.input {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
   color: #FFF;
   font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 2rem;
-  font-weight: 600;
-  padding: 0px;
-  height: 2.5rem;
-  line-height: 0px;
+  font-weight: 500;
   vertical-align: baseline;
-  outline: none;
 }
 
-.input:hover {
+input.input:hover {
   background: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
 }
 
-.input:focus {
+input.input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background: rgba(0, 0, 0, 0);
-  border-color: rgba(0, 0, 0, 0);
-  outline: none;
-  outline-color: rgba(0, 0, 0, 0);
-  outline-width: none;
 }
 
-.input::-webkit-input-placeholder {
-  color: #FFF;
-  opacity: 1;
-  font-weight: 600;
+.toggle, .reset {
+  font-size: medium;
 }
 
-.input:-ms-input-placeholder {
-  color: #FFF;
-  opacity: 1;
-  font-weight: 600;
+.extra-information-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
 }
 
-.input::-ms-input-placeholder {
-  color: #FFF;
-  opacity: 1;
-  font-weight: 600;
+.extra-information {
+  margin-left: 30px;
 }
 
-.input::placeholder {
-  color: #FFF;
-  opacity: 1;
-  font-weight: 600;
+.extra-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 400px;
+  font-size: x-large;
 }
 /*# sourceMappingURL=main.css.map */
