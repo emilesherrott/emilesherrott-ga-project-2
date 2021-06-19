@@ -11,3 +11,7 @@
 .show-info-text {
   @include show-info-text;
 }
+
+.navbar {
+  @include navbar;
+}

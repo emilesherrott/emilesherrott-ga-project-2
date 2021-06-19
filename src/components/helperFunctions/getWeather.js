@@ -10,7 +10,7 @@ export const getCloudCoverage = (clouds) => {
 
 
 export const getRainLevel = (rain) => {
-  if (rain > 0.2) {
+  if (rain >= 0) {
     return 'light-rain'
   } else if (rain >= 0.5) {
     return 'moderate-rain'

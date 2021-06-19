@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import Background from './Background'
 
 const Home = () => {
   const [formData, setFormData] = useState('')
@@ -42,7 +41,6 @@ const Home = () => {
 
   return (
     <>
-      <Background />
       {!weather ?
         <div className="main-container">
           <span className="inline-block main-text"> What&apos;s the weather like in...</span>

@@ -72,10 +72,17 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 300px;
   font-family: "Roboto", sans-serif;
+  width: 300px;
   font-weight: 700;
   color: #FFF;
+  font-size: larger;
+}
+
+.navbar {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #002;
   font-size: larger;
 }
 
@@ -90,7 +97,7 @@
   caret-color: #FFF;
 }
 
-body {
+#screen {
   height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */

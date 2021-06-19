@@ -37,17 +37,21 @@ const Background = () => {
   const snow = willItSnow(weather.forecast.forecastday[0].day.daily_will_it_snow)
 
 
+  console.log(timeOfDay)
+  console.log(clouds)
+  console.log(rain)
+  console.log(snow)
+  console.log(chooseBackground(timeOfDay, clouds, rain, snow))
 
   return (
-    <>
-      <body
-        style={{
-          backgroundImage: `url(${chooseBackground(timeOfDay, clouds, rain, snow)})`,
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-        }}
-      />
-    </>
+    <div id="screen"
+      style={{
+        backgroundImage: `url(${chooseBackground(timeOfDay, clouds, rain, snow)})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+      }}
+    />
+
   )
 }
 
