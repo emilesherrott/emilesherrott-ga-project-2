@@ -1,6 +1,11 @@
 .main-text {
   @include main-text;
 }
+
+.main-display-text {
+  @include main-display-text;
+}
+
 .home-input {
   @include main-text;
 }
@@ -14,4 +19,32 @@
 
 .navbar {
   @include navbar;
+}
+
+::placeholder {
+    color: #FFF;
+  }
+
+
+.forecast-text {
+  @include forecast-text;
+}
+.forecast-text-astro {
+  @include forecast-text-astro;
+}
+
+.forecast-options-text {
+  @include forecast-options-text;
+}
+
+.forecast-expanded-title {
+  @include forecast-expanded-title;
+}
+
+.forecast-expanded {
+  @include forecast-expanded;
+}
+
+.forecast-symbol {
+  font-size: small;
 }

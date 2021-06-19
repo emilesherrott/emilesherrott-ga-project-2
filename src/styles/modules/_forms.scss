@@ -1,9 +1,34 @@
 .home-input {
-  background: rgba( #000000, 0.1);
+  background: rgba( #000, 0.1);
   border: none;
   &:hover, &:focus {
-    background: rgba( #000000, 0.0);
+    background: rgba( #000, 0.0);
     outline: none;
     caret-color: #FFF;
   }
+}
+
+.number-input {
+  background : rgba( #000, 0.0);
+  border: none;
+  &:hover, &:focus {
+    background: rgba( #000, 0.0);
+    outline: none;
+  }
+}
+
+.number-input {
+  background : rgba( #000, 0.1);
+  border: none;
+  width: auto;
+  &:hover, &:focus {
+    background: rgba( #000, 0.0);
+    outline: none;
+  }  
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  background : rgba( #000, 0.0);
+  color : #FFF;
 }

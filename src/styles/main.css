@@ -7,6 +7,15 @@
   display: inline-block;
 }
 
+.flex-space-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .main-container {
   position: absolute;
   top: 50%;
@@ -36,11 +45,54 @@
   margin-left: 40px;
 }
 
+.forecast-container {
+  position: absolute;
+  top: 32%;
+  left: 40%;
+}
+
+.forecast-inner-outer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.forecast-bottom {
+  margin-bottom: 60px;
+}
+
+.forecast-expanded-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0.5rem;
+}
+
 .main-text {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #FFF;
   font-size: xx-large;
+}
+
+.main-display-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  font-size: xx-large;
+  max-width: 600px;
 }
 
 .home-input {
@@ -86,6 +138,76 @@
   font-size: larger;
 }
 
+::-webkit-input-placeholder {
+  color: #FFF;
+}
+
+:-ms-input-placeholder {
+  color: #FFF;
+}
+
+::-ms-input-placeholder {
+  color: #FFF;
+}
+
+::placeholder {
+  color: #FFF;
+}
+
+.forecast-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  width: 500px;
+  font-weight: 700;
+  color: #FFF;
+  font-size: x-large;
+}
+
+.forecast-text-astro {
+  font-family: "Roboto", sans-serif;
+  width: 350px;
+  font-weight: 700;
+  color: #FFF;
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+.forecast-options-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  font-size: large;
+  margin-left: 2rem;
+  margin-top: 2.2rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.forecast-expanded-title {
+  display: block;
+  width: 100px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  font-size: large;
+}
+
+.forecast-expanded {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  font-size: large;
+}
+
+.forecast-symbol {
+  font-size: small;
+}
+
 .home-input {
   background: rgba(0, 0, 0, 0.1);
   border: none;
@@ -95,6 +217,33 @@
   background: rgba(0, 0, 0, 0);
   outline: none;
   caret-color: #FFF;
+}
+
+.number-input {
+  background: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.number-input:hover, .number-input:focus {
+  background: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+.number-input {
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  width: auto;
+}
+
+.number-input:hover, .number-input:focus {
+  background: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  background: rgba(0, 0, 0, 0);
+  color: #FFF;
 }
 
 #screen {

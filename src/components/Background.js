@@ -36,7 +36,10 @@ const Background = () => {
   const rain = getRainLevel(weather.current.precip_mm)
   const snow = willItSnow(weather.forecast.forecastday[0].day.daily_will_it_snow)
 
-
+  console.log(weather.location.localtime)
+  console.log(time)
+  console.log(sunrise)
+  console.log(sunset)
   console.log(timeOfDay)
   console.log(clouds)
   console.log(rain)

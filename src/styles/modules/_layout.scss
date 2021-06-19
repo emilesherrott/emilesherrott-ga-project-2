@@ -4,6 +4,10 @@
 .inline-block {
   display: inline-block;
 }
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
 
 .main-container {
   position: absolute;
@@ -27,4 +31,28 @@
   .display-show-child {
     margin-left: 40px;
   }
+}
+
+
+
+
+
+
+
+.forecast-container {
+  position: absolute;
+  top: 32%;
+  left: 40%;
+}
+
+.forecast-inner-outer-container {
+  display: flex;
+}
+
+.forecast-bottom {
+  margin-bottom: 60px;
+}
+
+.forecast-expanded-div {
+  @include forecast-expanded-div;
 }

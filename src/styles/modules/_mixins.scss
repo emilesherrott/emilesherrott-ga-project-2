@@ -5,6 +5,17 @@
   font-size: xx-large;
 }
 
+@mixin main-display-text {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $primary-font;
+    font-weight: 700;
+    color: #FFF;
+    font-size: xx-large;
+    max-width: 600px;
+  }
+
+
 @mixin main-options-text {
   font-family: $primary-font;
   font-weight: 700;
@@ -26,6 +37,59 @@
   color: #FFF;
   font-size: larger;
 }
+
+@mixin forecast-text {
+  display: flex;
+  justify-content: space-between;
+  font-family: $primary-font;
+  width: 500px;
+  font-weight: 700;
+  color: #FFF;
+  font-size: x-large;
+}
+
+@mixin forecast-text-astro {
+  font-family: $primary-font;
+  width: 350px;
+  font-weight: 700;
+  color: #FFF;
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+@mixin forecast-options-text {
+  font-family: $primary-font;
+  font-weight: 700;
+  color: #FFF;
+  font-size: large;
+  margin-left: 2rem;
+  margin-top: 2.2rem;
+  transform: rotate(90deg);
+}
+
+@mixin forecast-expanded-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+@mixin forecast-expanded-title {
+  display: block;
+  width: 100px;
+  font-family: $primary-font;
+  font-weight: 700;
+  color: #FFF;
+  font-size: large;
+}
+
+@mixin forecast-expanded {
+  font-family: $primary-font;
+  font-weight: 700;
+  color: #FFF;
+  font-size: large;
+}
+
 
 @mixin navbar {
   font-family: $primary-font;

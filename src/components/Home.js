@@ -10,8 +10,7 @@ const Home = () => {
 
   const handleChange = (event) => {
     console.log(event.target.value)
-    const newFormData = event.target.value
-    setFormData(newFormData)
+    setFormData(event.target.value)
   }
   const handleSubmit = (event) => {
     event.preventDefault()
