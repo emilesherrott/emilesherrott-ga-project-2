@@ -15,7 +15,6 @@ const Forecast = () => {
   })
   const [weather, setWeather] = useState('')
   const [forecasts, setForecasts] = useState([])
-  // const [displayExtra, setDisplayExtra] = useState(false)
 
   const handleChange = (event) => {
     setFormData(event.target.value)
@@ -34,11 +33,6 @@ const Forecast = () => {
   const resetForm = () => {
     setWeather('')
   }
-
-  // const toggleDisplay = () => {
-  //   setDisplayExtra(!displayExtra)
-  // }
-  // const displayShowHide = displayExtra ? 'Expand' : 'Condense'
 
   useEffect(() => {
     const getData = async () => {
@@ -68,7 +62,7 @@ const Forecast = () => {
               <span className="inline-block main-text"> What&apos;s the weather like in...</span>
               <input
                 onChange={handleChange}
-                className="home-input"
+                className="home-input click"
                 placeholder=""
                 name="location"
                 autoComplete="off" />
@@ -78,7 +72,7 @@ const Forecast = () => {
               <input
                 onChange={handleNumberChange}
                 onWheel={(event) => event.target.blur()}
-                className="number-input main-text"
+                className="number-input main-text click"
                 type="number"
                 name="number"
                 min="1"
@@ -92,6 +86,7 @@ const Forecast = () => {
               />
             </div>
           </form>
+          <span className="main-options-text block">(API limited to next 3 days)</span>
         </div >
         :
         <>
@@ -99,16 +94,13 @@ const Forecast = () => {
             <div className="main-container">
               <span className="block"><span className="main-display-text">The weather in {weather.location.name} is {weather.current.condition.text.toLowerCase()} </span></span>
               <span className="forecast-text-astro flex-space-between"><span>Sunrise: {trimSunrise(weather.forecast.forecastday[0].astro.sunrise)}</span><span>Sunset: {trimSunset(weather.forecast.forecastday[0].astro.sunset)}</span></span>
-              <span className="main-options-text block" onClick={resetForm}>New search</span>
+              <span className="main-options-text block click" onClick={resetForm}>New search</span>
             </div>
             <div className="forecast-container">
               {forecasts.map(forecast => (
                 <ForecastDay key={forecast.date} {...forecast} />
               ))}
             </div>
-
-            {/* {!displayExtra ? */}
-            {/* } */}
           </div>
         </>
       }

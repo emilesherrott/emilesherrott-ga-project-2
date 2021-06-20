@@ -90,6 +90,12 @@
   font-size: large;
 }
 
+@mixin history-display-flex {
+  display: flex;
+}
+
+
+
 
 @mixin navbar {
   font-family: $primary-font;

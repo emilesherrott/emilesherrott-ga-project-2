@@ -1,3 +1,7 @@
+nav {
+  position: absolute;
+}
+
 .block {
   display: block;
 }
@@ -55,4 +59,10 @@
 
 .forecast-expanded-div {
   @include forecast-expanded-div;
+}
+
+
+
+.history-display-flex {
+  @include history-display-flex;
 }

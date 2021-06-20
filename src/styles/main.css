@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+nav {
+  position: absolute;
+}
+
 .block {
   display: block;
 }
@@ -73,6 +77,12 @@
       -ms-flex-align: center;
           align-items: center;
   margin-right: 0.5rem;
+}
+
+.history-display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main-text {
@@ -248,5 +258,14 @@ input::-webkit-inner-spin-button {
 
 #screen {
   height: 100vh;
+}
+
+.click:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.social-media {
+  width: 30px;
 }
 /*# sourceMappingURL=main.css.map */

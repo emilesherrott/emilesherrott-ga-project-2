@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
+import { getTimeFromWeather } from './helperFunctions/getTime'
+
 
 const Home = () => {
   const [formData, setFormData] = useState('')
@@ -45,7 +47,7 @@ const Home = () => {
           <span className="inline-block main-text"> What&apos;s the weather like in...</span>
           <form
             onSubmit={handleSubmit}
-            className="inline-block home-form">
+            className="inline-block home-form click">
             <input
               onChange={handleChange}
               className="home-input"
@@ -59,23 +61,22 @@ const Home = () => {
           <div className="display-flex-row">
             <div className="main-container">
               <span className="main-text">The weather in {weather.location.name} is {weather.current.condition.text.toLowerCase()} </span>
-              <span id="display-show-hide" className="main-options-text block" onClick={toggleDisplay}>{displayShowHide}</span>
-              <span className="main-options-text block" onClick={resetForm}>New search</span>
+              <span id="display-show-hide" className="main-options-text block click" onClick={toggleDisplay}>{displayShowHide}</span>
+              <span className="main-options-text block click" onClick={resetForm}>New search</span>
             </div>
             {!displayExtra ?
               <>
                 <div id="display-show" className="">
                   <div className="display-show-child">
+                    <div><span className="show-info-text"><span>Local Time (when loaded):</span><span>{getTimeFromWeather(weather.location.localtime)}</span></span></div>
                     <div><span className="show-info-text"><span>Temperature:</span><span>{weather.current.temp_c} &#8451;</span></span></div>
                     <div><span className="show-info-text"><span>Feels like:</span> <span>{weather.current.feelslike_c} &#8451;</span></span></div>
-                    <div><span className="show-info-text"><span>Max Temperature:</span><span>{weather.forecast.forecastday[0].day.maxtemp_c} &#8451;</span></span></div>
-                    <div><span className="show-info-text"><span>Min Temperature:</span><span>{weather.forecast.forecastday[0].day.mintemp_c} &#8451;</span></span></div>
                   </div>
                   <div className="display-show-child">
                     <div><span className="show-info-text"><span>Wind Speed:</span> <span>{weather.current.wind_kph} kph</span></span></div>
                     <div><span className="show-info-text"><span>Wind Direction:</span> <span>{weather.current.wind_dir}</span></span></div>
                     <div><span className="show-info-text"><span>Precipitation:</span> <span>{weather.current.precip_mm} mm</span></span></div>
-                    <div><span className="show-info-text"><span>Humidity:</span> <span>{weather.current.humidity} &#37;</span></span></div>
+                    <div><span className="show-info-text"><span>Humidity:</span> <span>{weather.current.humidity} g/kg</span></span></div>
                   </div>
                 </div>
               </>
