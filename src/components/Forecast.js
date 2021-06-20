@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 import { trimSunrise, trimSunset } from './helperFunctions/getTime'
+import { errorHandler } from './helperFunctions/errorHandling'
 
 import ForecastDay from './ForecastDay'
 
@@ -41,7 +42,7 @@ const Forecast = () => {
         setWeather(data)
         setForecasts(data.forecast.forecastday)
       } catch (err) {
-        console.log(err)
+        errorHandler(err)
       }
     }
     getData()

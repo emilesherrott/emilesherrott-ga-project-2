@@ -3,6 +3,7 @@ import axios from 'axios'
 
 import { correctFormat } from './helperFunctions/sortForecast'
 import { getSunriseTimeFromWeather, getSunsetTimeFromWeather, getMoonriseMoonsetTimeFromWeather } from './helperFunctions/getTime'
+import { errorHandler } from './helperFunctions/errorHandling'
 
 const History = () => {
   const [formData, setFormData] = useState('')
@@ -42,7 +43,7 @@ const History = () => {
         const { data } = await axios.get(`http://api.weatherapi.com/v1/history.json?key=bc3268a2d36f4676922230553211606&q=${formSubmit.location}&dt=${formSubmit.date}`)
         setWeather(data)
       } catch (err) {
-        console.log(err)
+        errorHandler(err)
       }
     }
     getData()

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 import { getTimeFromWeather } from './helperFunctions/getTime'
+import { errorHandler } from './helperFunctions/errorHandling'
 
 
 const Home = () => {
@@ -34,7 +35,7 @@ const Home = () => {
         const { data } = await axios.get(`http://api.weatherapi.com/v1/forecast.json?key=bc3268a2d36f4676922230553211606&q=${formSubmit}&days=1&aqi=yes&alerts=no`)
         setWeather(data)
       } catch (err) {
-        console.log(err)
+        errorHandler(err)
       }
     }
     getData()
