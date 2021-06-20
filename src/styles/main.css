@@ -53,7 +53,7 @@ nav {
 
 @media only screen and (max-width: 1480px) {
   .main-container {
-    top: 10%;
+    top: 15%;
   }
 }
 
@@ -99,7 +99,7 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: 25%;
+    top: 35%;
   }
 }
 
@@ -135,7 +135,7 @@ nav {
 
 @media only screen and (max-width: 1480px) {
   .forecast-container {
-    top: 25%;
+    top: 35%;
     left: 6%;
   }
 }
