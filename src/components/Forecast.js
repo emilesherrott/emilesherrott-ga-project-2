@@ -69,7 +69,7 @@ const Forecast = () => {
                 autoComplete="off" />
             </div>
             <div>
-              <span className="inline-block main-text"> For the next...</span>
+              <span className="inline-block main-text"> for the next...</span>
               <input
                 onChange={handleNumberChange}
                 onWheel={(event) => event.target.blur()}
@@ -79,6 +79,7 @@ const Forecast = () => {
                 min="1"
                 max="3" />
               <span className="inline-block main-text"> {formNumberData === '1' ? 'day' : 'days'}</span>
+              <span className="inline-block main-text">?</span>
             </div>
             <div>
               <input
@@ -93,8 +94,8 @@ const Forecast = () => {
         <>
           <div className="display-flex-row">
             <div className="main-container">
-              <span className="block"><span className="main-display-text">The weather in {weather.location.name} is {weather.current.condition.text.toLowerCase()} </span></span>
-              <span className="forecast-text-astro flex-space-between"><span>Sunrise: {trimSunrise(weather.forecast.forecastday[0].astro.sunrise)}</span><span>Sunset: {trimSunset(weather.forecast.forecastday[0].astro.sunset)}</span></span>
+              <span id="heading" className="block"><span className="main-display-text">The weather in {weather.location.name} is {weather.current.condition.text.toLowerCase()} </span></span>
+              <span id="heading" className="forecast-text-astro flex-space-between"><span>Sunrise: {trimSunrise(weather.forecast.forecastday[0].astro.sunrise)}</span><span>Sunset: {trimSunset(weather.forecast.forecastday[0].astro.sunset)}</span></span>
               <span className="main-options-text block click" onClick={resetForm}>New search</span>
             </div>
             <div className="forecast-container">

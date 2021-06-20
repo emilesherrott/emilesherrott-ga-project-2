@@ -10,7 +10,7 @@
 @import './modules/navbar';
 
 #screen {
-  height: 100vh;
+  height: 96vh;
 }
 
 .click {
@@ -21,4 +21,10 @@
 
 .social-media {
   width: 30px;
+}
+
+.created-by {
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
 }

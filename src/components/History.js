@@ -75,7 +75,9 @@ const History = () => {
                 className="number-input main-text click"
                 type="date"
                 name="number" />
+              <span className="inline-block main-text">?</span>
             </div>
+
             <div>
               <input
                 type="submit"

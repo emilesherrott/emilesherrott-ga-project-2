@@ -3,6 +3,15 @@
   font-weight: 700;
   color: #FFF;
   font-size: xx-large;
+  @media only screen and (max-width: 2200px) {
+    font-size: x-large;
+  }
+  @media only screen and (max-width: 1730px) {
+    font-size: larger;
+  }
+  @media only screen and (max-width: 1055px) {
+    font-size: large;
+  }
 }
 
 @mixin main-display-text {
@@ -13,6 +22,24 @@
     color: #FFF;
     font-size: xx-large;
     max-width: 600px;
+    @media only screen and (max-width: 2200px) {
+      font-size: x-large;
+    }
+    @media only screen and (max-width: 1800px) {
+      max-width: 400px;
+    }
+    @media only screen and (max-width: 1730px) {
+      max-width: 340px;
+      font-size: larger;
+    }
+    @media only screen and (max-width: 1055px) {
+      font-size: large;
+      max-width: 600px;
+    }
+    @media only screen and (max-width: 360px) {
+      font-size: small;
+      max-width: 400px;
+    }
   }
 
 
@@ -26,6 +53,15 @@
     transform: translate(20px);
     transition: 500ms;
   }
+  @media only screen and (max-width: 1730px) {
+    font-size: medium;
+  }
+  @media only screen and (max-width: 1055px) {
+    font-size: small;
+  }
+  @media only screen and (max-width: 360px) {
+    font-size: x-small;
+  }
 }
 
 @mixin show-info-text {
@@ -36,7 +72,15 @@
   font-weight: 700;
   color: #FFF;
   font-size: larger;
+  @media only screen and (max-width: 1730px) {
+    width: 260px;
+    font-size: large;
+  }
+  @media only screen and (max-width: 1055px) {
+    font-size: medium;
+  }
 }
+
 
 @mixin forecast-text {
   display: flex;
@@ -46,6 +90,37 @@
   font-weight: 700;
   color: #FFF;
   font-size: x-large;
+  @media only screen and (max-width: 2300px) {
+    width: 480px;
+   }
+   @media only screen and (max-width: 2300px) {
+    width: 470px;
+  }
+  @media only screen and (max-width: 2200px) {
+    width: 420px;
+    font-size: larger;
+  }
+  @media only screen and (max-width: 1900px) {
+    width: 380px;
+    font-size: larger;
+  }
+  @media only screen and (max-width: 1800px) {
+    font-size: large;
+  }
+  @media only screen and (max-width: 1730px) {
+    width: 300px;
+    font-size: medium;
+  }
+  @media only screen and (max-width: 1100px) {
+    width: 280px;
+  }
+  @media only screen and (max-width: 1055px) {
+    font-size: small;
+  }
+  @media only screen and (max-width: 360px) {
+    font-size: x-small;
+    width: 200px;
+  }
 }
 
 @mixin forecast-text-astro {
@@ -55,6 +130,23 @@
   color: #FFF;
   font-size: x-large;
   margin-bottom: 20px;
+  @media only screen and (max-width: 2200px) {
+    width: 300px;
+    font-size: larger;
+  }
+  @media only screen and (max-width: 1730px) {
+    font-size: large;
+  }
+  @media only screen and (max-width: 1480px) {
+    font-size: medium;
+    width: 240px;
+  }
+  @media only screen and (max-width: 1055px) {
+    font-size: small;
+  }
+  @media only screen and (max-width: 360px) {
+    width: 200px
+  }
 }
 
 @mixin forecast-options-text {
@@ -65,6 +157,21 @@
   margin-left: 2rem;
   margin-top: 2.2rem;
   transform: rotate(90deg);
+  @media only screen and (max-width: 1900px) {
+    margin-left: 0rem;
+  }
+  @media only screen and (max-width: 1730px) {
+    font-size: medium;
+  }
+  @media only screen and (max-width: 1100px) {
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+    margin-top: 1.5rem;
+  }
+  @media only screen and (max-width: 1055px) {
+    font-size: small;
+    display: none;
+  }
 }
 
 @mixin forecast-expanded-div {
@@ -81,6 +188,19 @@
   font-weight: 700;
   color: #FFF;
   font-size: large;
+  @media only screen and (max-width: 1980px) {
+    font-size: medium;
+  }
+  @media only screen and (max-width: 1730px) {
+    font-size: small;
+  }
+  @media only screen and (max-width: 1100px) {
+    width: 90px;
+  }
+  @media only screen and (max-width: 1055px) {
+    font-size: smaller;
+    display: none;
+  }
 }
 
 @mixin forecast-expanded {
@@ -88,6 +208,16 @@
   font-weight: 700;
   color: #FFF;
   font-size: large;
+  @media only screen and (max-width: 1980px) {
+    font-size: medium;
+  }
+  @media only screen and (max-width: 1730px) {
+    font-size: small;
+  }
+  @media only screen and (max-width: 1055px) {
+    font-size: smaller;
+    display: none;
+  }
 }
 
 @mixin history-display-flex {

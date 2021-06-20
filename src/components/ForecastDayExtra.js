@@ -15,7 +15,7 @@ const ForecastDayExtra = ({ hour }) => {
         <span className="forecast-expanded-title">Speed mph.</span>
       </div>
       {hour.map(specificHour => (
-        <div key="{specificHour.time}" className="forecast-expanded-div">
+        <div key="{specificHour.time_epoch}" className="forecast-expanded-div">
           <span className="forecast-expanded">{trimHourTime(specificHour.time)}</span>
           <span className="forecast-expanded">{wholeNumTemp(specificHour.temp_c)}</span>
           <span className="forecast-expanded">{specificHour.chance_of_rain}</span>

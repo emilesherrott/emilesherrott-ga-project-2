@@ -1,10 +1,17 @@
 nav {
   position: absolute;
+  height: 4vh;
 }
 
 .block {
   display: block;
 }
+#heading {
+  @media only screen and (max-width: 1480px) {
+    margin-bottom: 5px;
+  }
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -17,6 +24,18 @@ nav {
   position: absolute;
   top: 50%;
   left: 10%;
+  @media only screen and (max-width: 2400px) {
+   left: 8%; 
+  }
+  @media only screen and (max-width: 2300px) {
+    left: 6%;
+  }
+  @media only screen and (max-width: 1800px) {
+    top: 50%;
+  }
+  @media only screen and (max-width: 1480px) {
+    top: 10%;
+  }
 }
 
 .display-flex-row {
@@ -35,7 +54,20 @@ nav {
   .display-show-child {
     margin-left: 40px;
   }
-}
+  @media only screen and (max-width: 1480px) {
+      left: 6%;
+      .display-show-child {
+        margin-left: 0px;
+        margin-right: 20px;
+      }
+    }
+    @media only screen and (max-width: 630px) {
+      display: flex;
+      flex-direction: column;
+      top: 25%;
+    }
+  }
+
 
 
 
@@ -47,6 +79,23 @@ nav {
   position: absolute;
   top: 32%;
   left: 40%;
+  @media only screen and (max-width: 2400px) {
+    left: 38%;
+  }
+  @media only screen and (max-width: 2300px) {
+    left: 36%;
+  }
+  @media only screen and (max-width: 2200px) {
+    left: 32%;
+  }
+  @media only screen and (max-width: 1800px) {
+    left: 30%;
+  }
+  @media only screen and (max-width: 1480px) {
+    top: 25%;
+    left: 6%;
+  }
+
 }
 
 .forecast-inner-outer-container {
@@ -55,6 +104,9 @@ nav {
 
 .forecast-bottom {
   margin-bottom: 60px;
+  @media only screen and (max-width: 1480px) {
+    margin-bottom: 20px;
+  }
 }
 
 .forecast-expanded-div {

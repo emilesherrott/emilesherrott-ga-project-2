@@ -56,6 +56,7 @@ const Home = () => {
               name="location"
               autoComplete="off" />
           </form>
+          <span className="inline-block main-text">?</span>
         </div>
         :
         <>

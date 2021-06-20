@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 nav {
   position: absolute;
+  height: 4vh;
 }
 
 .block {
   display: block;
+}
+
+@media only screen and (max-width: 1480px) {
+  #heading {
+    margin-bottom: 5px;
+  }
 }
 
 .inline-block {
@@ -24,6 +31,30 @@ nav {
   position: absolute;
   top: 50%;
   left: 10%;
+}
+
+@media only screen and (max-width: 2400px) {
+  .main-container {
+    left: 8%;
+  }
+}
+
+@media only screen and (max-width: 2300px) {
+  .main-container {
+    left: 6%;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  .main-container {
+    top: 50%;
+  }
+}
+
+@media only screen and (max-width: 1480px) {
+  .main-container {
+    top: 10%;
+  }
 }
 
 .display-flex-row {
@@ -49,10 +80,64 @@ nav {
   margin-left: 40px;
 }
 
+@media only screen and (max-width: 1480px) {
+  #display-show {
+    left: 6%;
+  }
+  #display-show .display-show-child {
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  #display-show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 25%;
+  }
+}
+
 .forecast-container {
   position: absolute;
   top: 32%;
   left: 40%;
+}
+
+@media only screen and (max-width: 2400px) {
+  .forecast-container {
+    left: 38%;
+  }
+}
+
+@media only screen and (max-width: 2300px) {
+  .forecast-container {
+    left: 36%;
+  }
+}
+
+@media only screen and (max-width: 2200px) {
+  .forecast-container {
+    left: 32%;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  .forecast-container {
+    left: 30%;
+  }
+}
+
+@media only screen and (max-width: 1480px) {
+  .forecast-container {
+    top: 25%;
+    left: 6%;
+  }
 }
 
 .forecast-inner-outer-container {
@@ -63,6 +148,12 @@ nav {
 
 .forecast-bottom {
   margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 1480px) {
+  .forecast-bottom {
+    margin-bottom: 20px;
+  }
 }
 
 .forecast-expanded-div {
@@ -92,6 +183,24 @@ nav {
   font-size: xx-large;
 }
 
+@media only screen and (max-width: 2200px) {
+  .main-text {
+    font-size: x-large;
+  }
+}
+
+@media only screen and (max-width: 1730px) {
+  .main-text {
+    font-size: larger;
+  }
+}
+
+@media only screen and (max-width: 1055px) {
+  .main-text {
+    font-size: large;
+  }
+}
+
 .main-display-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,11 +214,62 @@ nav {
   max-width: 600px;
 }
 
+@media only screen and (max-width: 2200px) {
+  .main-display-text {
+    font-size: x-large;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  .main-display-text {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 1730px) {
+  .main-display-text {
+    max-width: 340px;
+    font-size: larger;
+  }
+}
+
+@media only screen and (max-width: 1055px) {
+  .main-display-text {
+    font-size: large;
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .main-display-text {
+    font-size: small;
+    max-width: 400px;
+  }
+}
+
 .home-input {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #FFF;
   font-size: xx-large;
+}
+
+@media only screen and (max-width: 2200px) {
+  .home-input {
+    font-size: x-large;
+  }
+}
+
+@media only screen and (max-width: 1730px) {
+  .home-input {
+    font-size: larger;
+  }
+}
+
+@media only screen and (max-width: 1055px) {
+  .home-input {
+    font-size: large;
+  }
 }
 
 .main-options-text {
@@ -127,6 +287,24 @@ nav {
   transition: 500ms;
 }
 
+@media only screen and (max-width: 1730px) {
+  .main-options-text {
+    font-size: medium;
+  }
+}
+
+@media only screen and (max-width: 1055px) {
+  .main-options-text {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .main-options-text {
+    font-size: x-small;
+  }
+}
+
 .show-info-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,6 +317,19 @@ nav {
   font-weight: 700;
   color: #FFF;
   font-size: larger;
+}
+
+@media only screen and (max-width: 1730px) {
+  .show-info-text {
+    width: 260px;
+    font-size: large;
+  }
+}
+
+@media only screen and (max-width: 1055px) {
+  .show-info-text {
+    font-size: medium;
+  }
 }
 
 .navbar {
@@ -178,6 +369,64 @@ nav {
   font-size: x-large;
 }
 
+@media only screen and (max-width: 2300px) {
+  .forecast-text {
+    width: 480px;
+  }
+}
+
+@media only screen and (max-width: 2300px) {
+  .forecast-text {
+    width: 470px;
+  }
+}
+
+@media only screen and (max-width: 2200px) {
+  .forecast-text {
+    width: 420px;
+    font-size: larger;
+  }
+}
+
+@media only screen and (max-width: 1900px) {
+  .forecast-text {
+    width: 380px;
+    font-size: larger;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  .forecast-text {
+    font-size: large;
+  }
+}
+
+@media only screen and (max-width: 1730px) {
+  .forecast-text {
+    width: 300px;
+    font-size: medium;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .forecast-text {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 1055px) {
+  .forecast-text {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .forecast-text {
+    font-size: x-small;
+    width: 200px;
+  }
+}
+
 .forecast-text-astro {
   font-family: "Roboto", sans-serif;
   width: 350px;
@@ -185,6 +434,38 @@ nav {
   color: #FFF;
   font-size: x-large;
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 2200px) {
+  .forecast-text-astro {
+    width: 300px;
+    font-size: larger;
+  }
+}
+
+@media only screen and (max-width: 1730px) {
+  .forecast-text-astro {
+    font-size: large;
+  }
+}
+
+@media only screen and (max-width: 1480px) {
+  .forecast-text-astro {
+    font-size: medium;
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width: 1055px) {
+  .forecast-text-astro {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .forecast-text-astro {
+    width: 200px;
+  }
 }
 
 .forecast-options-text {
@@ -198,6 +479,33 @@ nav {
           transform: rotate(90deg);
 }
 
+@media only screen and (max-width: 1900px) {
+  .forecast-options-text {
+    margin-left: 0rem;
+  }
+}
+
+@media only screen and (max-width: 1730px) {
+  .forecast-options-text {
+    font-size: medium;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .forecast-options-text {
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1055px) {
+  .forecast-options-text {
+    font-size: small;
+    display: none;
+  }
+}
+
 .forecast-expanded-title {
   display: block;
   width: 100px;
@@ -207,11 +515,55 @@ nav {
   font-size: large;
 }
 
+@media only screen and (max-width: 1980px) {
+  .forecast-expanded-title {
+    font-size: medium;
+  }
+}
+
+@media only screen and (max-width: 1730px) {
+  .forecast-expanded-title {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .forecast-expanded-title {
+    width: 90px;
+  }
+}
+
+@media only screen and (max-width: 1055px) {
+  .forecast-expanded-title {
+    font-size: smaller;
+    display: none;
+  }
+}
+
 .forecast-expanded {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #FFF;
   font-size: large;
+}
+
+@media only screen and (max-width: 1980px) {
+  .forecast-expanded {
+    font-size: medium;
+  }
+}
+
+@media only screen and (max-width: 1730px) {
+  .forecast-expanded {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 1055px) {
+  .forecast-expanded {
+    font-size: smaller;
+    display: none;
+  }
 }
 
 .forecast-symbol {
@@ -257,7 +609,7 @@ input::-webkit-inner-spin-button {
 }
 
 #screen {
-  height: 100vh;
+  height: 96vh;
 }
 
 .click:hover {
@@ -267,5 +619,11 @@ input::-webkit-inner-spin-button {
 
 .social-media {
   width: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .created-by {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
