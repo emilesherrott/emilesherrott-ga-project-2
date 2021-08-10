@@ -7,7 +7,7 @@ I was passionate about this project as weather applications are widley understoo
 ### Overview
 Project 1 | Brief
 -------------|--------------
-Name | LndOplyFinFacts
+Name | Weather Front...end
 Skills | HTML5, CSS3, Sass, JavaScript, React
 Time Frame | 48 hours
 Team Members | Pair Coded
