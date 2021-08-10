@@ -2,7 +2,7 @@
 ## [Weather Front...end](https://emilesherrott-ga-project-2.netlify.app/forecast)
 ### Project Description
 Based on a feed of data from the [Weather API](https://www.weatherapi.com/), my team member, Ole Nascimento and I set about building a visually interesting and intuitive web app to  utilise a broad range of data available. <br />
-I was passionate about this project as weather applications are widley understoodchose and used. Fitting my desire to work on projects which could be used to a wider range of users as possible. 
+I was passionate about this project as weather applications are widley understoodchose and used. Fitting my desire to work on projects which could be of use to a wider range of users as possible. 
 
 ### Overview
 Project 1 | Brief
