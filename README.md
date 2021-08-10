@@ -1,20 +1,31 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) GA London React Template
+Project Title One Paragraph of project description goes here
 
-## Using NPM
+Getting Started These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-`yarn start` or `yarn dev`  to run the development server
+Prerequisites What things you need to install the software and how to install them
 
-`yarn build` to create a build directory
+Give examples Installing A step by step series of examples that tell you how to get a development env running
 
-## Using Yarn
+Say what the step will be
 
-`yarn start` or `yarn dev`  to run the development server
+Give the example And repeat
 
-`yarn build` to create a build directory
+until finished End with an example of getting some data out of the system or using it for a little demo
 
-### ⚠️
+Running the tests Explain how to run the automated tests for this system
 
-To prevent the `failed-to-compile` issue for linter errors like `no-unsed-vars`, rename the `.env.example` to `.env` and restart your development server. Note this will only change the behaviour of certain linter errors to now be warnings, and is added just to allow your code to compile in development. These errors should still be fixed and other errors will still result in the code being unable to compile
+Break down into end to end tests Explain what these tests test and why
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Give an example And coding style tests Explain what these tests test and why
 
+Give an example Deployment Add additional notes about how to deploy this on a live system
+
+Built With Dropwizard - The web framework used Maven - Dependency Management ROME - Used to generate RSS Feeds Contributing Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+
+Versioning We use SemVer for versioning. For the versions available, see the tags on this repository.
+
+Authors Billie Thompson - Initial work - PurpleBooth See also the list of contributors who participated in this project.
+
+License This project is licensed under the MIT License - see the LICENSE.md file for details
+
+Acknowledgments Hat tip to anyone whose code was used Inspiration etc
