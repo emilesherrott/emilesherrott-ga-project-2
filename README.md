@@ -1,3 +1,25 @@
+# emilesherrott-ga-project-2
+## [Weather Front...end](https://emilesherrott-ga-project-2.netlify.app/forecast)
+### Project Description
+Based on a feed of data from the [Weather API](https://www.weatherapi.com/), my team member, Ole Nascimento and I set about building a visually interesting and intuitive web app to  utilise a broad range of data available. <br />
+I was passionate about this project as weather applications are widley understoodchose and used. Fitting my desire to work on projects which could be used to a wider range of users as possible. 
+
+### Overview
+Project 1 | Brief
+-------------|--------------
+Name | LndOplyFinFacts
+Skills | HTML5, CSS3, Sass, JavaScript, React
+Time Frame | 48 hours
+Team Members | Pair Coded
+
+### Setting up on a local machine
+1. Clone to repository onto your local machine by either:
+   * Running `git clone git@github.com:emilesherrott/emilesherrott-ga-project-1.git` from your terminal. 
+   * Downloading the emilesherrott-ga-project-1.zip file and open in your prefered code editor. 
+2. Right click on **index.html** and click: Open in default browser. 
+
+
+
 emilesherrott-ga-project-2
 Project Title One Paragraph of project description goes here
 
