@@ -5,12 +5,12 @@ Based on a feed of data from the [Weather API](https://www.weatherapi.com/), my 
 I was passionate about this project as weather applications are widley understoodchose and used. Fitting my desire to work on projects which could be of use to a wider range of users as possible. 
 
 ### Overview
-Project 1 | Brief
+Project 2 | Brief
 -------------|--------------
 Name | Weather Front...end
 Skills | HTML5, CSS3, Sass, JavaScript, React
 Time Frame | 48 hours
-Team Members | Pair Coded
+Participants | Pair Coded
 
 ### Setting up on a local machine
 1. Clone to repository onto your local machine by either:
