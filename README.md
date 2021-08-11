@@ -7,10 +7,11 @@ I was passionate about this project as weather applications are widley understoo
 ### Overview
 Project 2 | Brief
 -------------|--------------
-Name | Weather Front...end
-Skills | HTML5, CSS3, Sass, JavaScript, React
-Time Frame | 48 hours
 Participants | Pair Coded
+Time Frame | 48 hours
+Skills | JavaScript, React, Axios, HTML5, CSS3, Sass, Git, GitHub
+Deployment | Netlify
+
 
 ### Setting up on a local machine
 1. Clone to repository onto your local machine by either:
