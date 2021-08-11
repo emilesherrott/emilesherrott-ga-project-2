@@ -12,23 +12,28 @@ Time Frame | 2 days
 Skills | JavaScript, React, Axios, HTML5, CSS3, Sass, Git, GitHub
 Deployment | Netlify
 
+### Table of Contents  
+* [Setting up on a local machine](#anchor-1)
+* [Project Approach](#anchor-2)
+* [Project Challenges](#anchor-3)
+* [Project Bugs](#anchor-4)
+* [Project Learning Outcomes](#anchor-5)
+* [Acknowledgements](#anchor-6)
 
-### Setting up on a local machine
+### Setting up on a local machine <a id="anchor-1"></a>
 1. Clone to repository onto your local machine by either:
    * Running `git clone git@github.com:emilesherrott/emilesherrott-ga-project-2.git` from your terminal. 
    * Downloading the emilesherrott-ga-project-2.zip file and open in your prefered code editor. 
 2. Open up the terminal in your code editor. 
 3. Run the command `yarn start`
 
+### Project Approach <a id="anchor-2"></a>
 
+### Project Challenges <a id="anchor-3"></a>
 
-### Project Approach
+### Project Bugs <a id="anchor-4"></a>
 
-### Project Challenges
+### Project Learning Outcomes <a id="anchor-5"></a>
 
-### Project Bugs
-
-### What was learnt from building emilesherrott-ga-project-2
-
-### Acknowledgements
+### Acknowledgements <a id="anchor-6"></a>
 [Ole Nascimento](https://github.com/eintrittfrei)
