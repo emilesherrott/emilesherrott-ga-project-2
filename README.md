@@ -20,6 +20,9 @@ Deployment | Netlify
 * [Project Learning Outcomes](#anchor-5)
 * [Acknowledgements](#anchor-6)
 
+### Preview
+![ Alt text](emilesherrott-ga-project-1-gif.gif) [](emilesherrott-ga-project-1-gif.gif)
+
 ### Setting up on a local machine <a id="anchor-1"></a>
 1. Clone to repository onto your local machine by either:
    * Running `git clone git@github.com:emilesherrott/emilesherrott-ga-project-2.git` from your terminal. 
