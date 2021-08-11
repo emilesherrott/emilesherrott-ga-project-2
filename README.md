@@ -21,7 +21,7 @@ Deployment | Netlify
 * [Acknowledgements](#anchor-6)
 
 ### Preview
-![ Alt text](emilesherrott-ga-project-1-gif.gif) [](emilesherrott-ga-project-1-gif.gif)
+![ Alt text](emilesherrott-ga-project-2-gif.gif) [](emilesherrott-ga-project-2-gif.gif)
 
 ### Setting up on a local machine <a id="anchor-1"></a>
 1. Clone to repository onto your local machine by either:
