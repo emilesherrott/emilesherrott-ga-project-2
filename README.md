@@ -8,7 +8,7 @@ I was passionate about this project as weather applications are widley understoo
 Project 2 | Brief
 -------------|--------------
 Participants | Pair Coded
-Time Frame | 48 hours
+Time Frame | 2 days
 Skills | JavaScript, React, Axios, HTML5, CSS3, Sass, Git, GitHub
 Deployment | Netlify
 
