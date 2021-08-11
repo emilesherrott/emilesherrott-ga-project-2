@@ -31,3 +31,4 @@ Deployment | Netlify
 ### What was learnt from building emilesherrott-ga-project-2
 
 ### Acknowledgements
+[Ole Nascimento](https://github.com/eintrittfrei)
