@@ -27,6 +27,6 @@ Participants | Pair Coded
 
 ### Project Bugs
 
-### What was learnt from building emilesherrott-ga-project-1
+### What was learnt from building emilesherrott-ga-project-2
 
 ### Acknowledgements
