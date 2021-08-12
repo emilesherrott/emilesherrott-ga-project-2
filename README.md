@@ -12,6 +12,9 @@ Time Frame | 2 days
 Skills | JavaScript, React, Axios, HTML5, CSS3, Sass, Git, GitHub
 Deployment | Netlify
 
+### Preview
+![ Alt text](emilesherrott-ga-project-2-gif.gif) [](emilesherrott-ga-project-2-gif.gif)
+
 ### Table of Contents  
 * [Setting up on a local machine](#anchor-1)
 * [Project Approach](#anchor-2)
@@ -19,9 +22,6 @@ Deployment | Netlify
 * [Project Bugs](#anchor-4)
 * [Project Learning Outcomes](#anchor-5)
 * [Acknowledgements](#anchor-6)
-
-### Preview
-![ Alt text](emilesherrott-ga-project-2-gif.gif) [](emilesherrott-ga-project-2-gif.gif)
 
 ### Setting up on a local machine <a id="anchor-1"></a>
 1. Clone to repository onto your local machine by either:
